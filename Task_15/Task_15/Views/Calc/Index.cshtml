@@ -1,0 +1,27 @@
+﻿@model Calculator.Models.Calc
+
+<h2>My Calculator</h2>
+
+@using (Html.BeginForm())
+{
+    <p>
+        @Html.DisplayTextFor(m=>m.Argument1)
+    </p>
+    <p>
+        @Html.DisplayTextFor(m => m.Operator)
+    </p>
+    <p>
+        @Html.DisplayTextFor(m => m.Argument2)
+    </p>
+    <p>
+        @Html.DisplayTextFor(m => m.Ret)
+    </p>
+    <p>
+        @Html.TextBoxFor(m => m.Answer)
+    </p>
+
+    @Html.HiddenFor(m => m.Result, new { id = "Result", Value = @Model.Result })
+
+    <input type="submit" value="OK" />
+}
+
