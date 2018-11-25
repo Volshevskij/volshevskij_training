@@ -1,0 +1,72 @@
+﻿@model IEnumerable < Task_17.Models.User> 
+@{
+    ViewBag.Title = "Base";
+}
+
+<h2>Base</h2>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Selected</th>
+                <th>Name</th>
+                <th>Middle Name</th>
+                <th>Last Name</th>
+                <th>E-mail</th>
+                <th>Age</th>
+                <th>Phone</th>
+                <th>Adress</th>
+            </tr>
+        </thead>
+        <tbody id="UserContext">
+            @{Html.BeginForm();}
+    @foreach (Task_17.Models.User m in Model)
+            {
+                <tr>
+                    <th><input type="radio" name="id" value="@m.Id" /></th>
+                    <th>@m.Name</th>
+                    <th>@m.MidName</th>
+                    <th>@m.LastName</th>
+                    <th>@m.Email</th>
+                    <th>@m.Age</th>
+                    <th>@m.Phone</th>
+                    <th>@m.Adress</th>
+                </tr>
+            }
+            
+        </tbody>
+    </table>
+</div>
+
+<div class="container">
+    <div class="col-md-4">
+        <input class="form-control" id="filter" type="text" placeholder="Filter" />
+    </div>
+    <div class="col-md-4">
+
+    </div>
+    <div class="col-md-4">
+        @Html.ActionLink("Add", "Index","Home", new { id = 1 }, new { @class = "btn-default btn" })
+        <br />
+        <input type="submit" name="name" value="Change" class="btn-default btn" />
+        <br />
+        <input type="submit" name="name" value="Remove" class="btn-default btn" />
+    </div>
+</div>
+@{Html.EndForm();}
+
+<script>
+$(document).ready(function(){
+    $("#filter").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#UserContext tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+
+

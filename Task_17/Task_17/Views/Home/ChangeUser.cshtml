@@ -1,0 +1,41 @@
+﻿@model Task_17.Models.User
+
+
+<h2>Custom User Info</h2>
+
+@using (Html.BeginForm())
+{
+    <div class="form-horizontal">
+        <div class="form-group">
+            @Html.LabelFor(m => m.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-offset-5">
+                @Html.EditorFor(m => m.Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Name)
+                @Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+    <div class="form-horizontal">
+        <div class="form-group">
+            @Html.LabelFor(m => m.MidName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-offset-5">
+                @Html.EditorFor(m => m.MidName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.MidName)
+                @Html.ValidationMessageFor(m => m.MidName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+    <div class="form-horizontal">
+        <div class="form-group">
+            @Html.LabelFor(m => m.LastName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-offset-5">
+                @Html.EditorFor(m => m.LastName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.LastName)
+                @Html.ValidationMessageFor(m => m.LastName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+<input type="submit" class="btn-default btn"/>
+ }
+<h2>ChangeUser</h2>
+

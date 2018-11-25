@@ -1,0 +1,79 @@
+﻿@model Task_17.Models.User
+
+
+<h2>Add new user</h2>
+
+@using(Html.BeginForm())
+{
+    <div class="form-horizontal">
+        <div class="form-group">
+            @Html.LabelFor(m => m.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-offset-5">
+                @Html.EditorFor(m => m.Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.Name, "Set Name", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+    <div class="form-horizontal">
+        <div class="form-group">
+            @Html.LabelFor(m => m.MidName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-offset-5">
+                @Html.EditorFor(m => m.MidName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.MidName, "Set MidName", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+    <div class="form-horizontal">
+        <div class="form-group">
+            @Html.LabelFor(m => m.LastName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-offset-5">
+                @Html.EditorFor(m => m.LastName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.LastName, "Set LastName", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+    <div class="form-horizontal">
+        <div class="form-group">
+            @Html.LabelFor(m => m.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-offset-5">
+                @Html.EditorFor(m => m.Email, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.Email, "Set Email", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+    <div class="form-horizontal">
+        <div class="form-group">
+            @Html.LabelFor(m => m.Age, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-offset-5">
+                @Html.EditorFor(m => m.Age, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.Age, "Set Age", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+    <div class="form-horizontal">
+        <div class="form-group">
+            @Html.LabelFor(m => m.Phone, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-offset-5">
+                @Html.EditorFor(m => m.Phone, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.Phone, "Set Phone", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+    <div class="form-horizontal">
+        <div class="form-group">
+            @Html.LabelFor(m => m.Adress, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-offset-5">
+                @Html.EditorFor(m => m.Adress, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.Adress, "Set Adress", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+
+
+    <input type="submit" value="Add" class = "btn-default btn"/>  
+    <th>
+    @Html.ActionLink("Main", "Base", "Home", new { id = 1 }, new { @class = "btn-default btn" })
+    </th>
+}
+
+

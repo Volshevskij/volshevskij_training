@@ -1,0 +1,109 @@
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\ApplicationInsights.config
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\roslyn\csc.exe
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\roslyn\System.Collections.Immutable.dll
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\roslyn\vbc.exe
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\roslyn\VBCSCompiler.exe
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\roslyn\VBCSCompiler.exe.config
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\Task_17.dll.config
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\Task_17.dll
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\Task_17.pdb
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\Microsoft.AI.Web.dll
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\Microsoft.AI.WindowsServer.dll
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\Microsoft.ApplicationInsights.dll
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\Microsoft.Web.Infrastructure.dll
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\System.Web.Helpers.dll
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\System.Web.Mvc.dll
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\System.Web.Razor.dll
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\System.Web.Webpages.Deployment.dll
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\System.Web.Webpages.dll
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\System.Web.Webpages.Razor.dll
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\Microsoft.AI.Web.xml
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\Microsoft.AI.WindowsServer.xml
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\Microsoft.ApplicationInsights.xml
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\System.Web.Razor.xml
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\System.Web.Webpages.xml
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\System.Web.Webpages.Deployment.xml
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\System.Web.Webpages.Razor.xml
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\System.Web.Helpers.xml
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\System.Web.Mvc.xml
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\ru\System.Web.Razor.resources.dll
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\ru\System.Web.Webpages.resources.dll
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\ru\System.Web.Webpages.Deployment.resources.dll
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\ru\System.Web.Webpages.Razor.resources.dll
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\ru\System.Web.Helpers.resources.dll
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\bin\ru\System.Web.Mvc.resources.dll
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\obj\Debug\Task_17.csprojResolveAssemblyReference.cache
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\obj\Debug\Task_17.dll
+c:\users\trn\documents\visual studio 2015\Projects\Task_17\Task_17\obj\Debug\Task_17.pdb
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\ApplicationInsights.config
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\roslyn\csc.exe
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\roslyn\vbc.exe
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\roslyn\VBCSCompiler.exe
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\Task_17.dll.config
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\Task_17.dll
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\Task_17.pdb
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\Microsoft.AI.Web.dll
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\Microsoft.ApplicationInsights.dll
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\System.Web.Helpers.dll
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\System.Web.Mvc.dll
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\System.Web.Razor.dll
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\System.Web.Webpages.Deployment.dll
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\System.Web.Webpages.dll
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\System.Web.Webpages.Razor.dll
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\Microsoft.AI.Web.xml
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\Microsoft.ApplicationInsights.xml
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\System.Web.Razor.xml
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\System.Web.Webpages.xml
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\System.Web.Webpages.Deployment.xml
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\System.Web.Webpages.Razor.xml
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\System.Web.Helpers.xml
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\System.Web.Mvc.xml
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\ru\System.Web.Razor.resources.dll
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\ru\System.Web.Webpages.resources.dll
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\ru\System.Web.Webpages.Deployment.resources.dll
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\ru\System.Web.Webpages.Razor.resources.dll
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\ru\System.Web.Helpers.resources.dll
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\ru\System.Web.Mvc.resources.dll
+C:\Users\User\source\repos\Влд\Task_17\Task_17\obj\Debug\Task_17.csprojResolveAssemblyReference.cache
+C:\Users\User\source\repos\Влд\Task_17\Task_17\obj\Debug\Task_17.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Влд\Task_17\Task_17\obj\Debug\Task_17.dll
+C:\Users\User\source\repos\Влд\Task_17\Task_17\obj\Debug\Task_17.pdb
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\EntityFramework.dll
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\EntityFramework.SqlServer.dll
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\EntityFramework.xml
+C:\Users\User\source\repos\Влд\Task_17\Task_17\bin\EntityFramework.SqlServer.xml
