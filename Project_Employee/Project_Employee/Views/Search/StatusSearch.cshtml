@@ -1,0 +1,50 @@
+﻿@model IEnumerable<Common.Employee>
+@{
+    ViewBag.Title = "Light DB";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm())
+{
+    <div class="text-center">
+        <br />
+        <table class="table table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">MidName</th>
+                    <th scope="col">LastName</th>
+                    <th scope="col">Department</th>
+                    <th scope="col">DepPhone</th>
+                    <th scope="col">Controls</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var employee in Model)
+                {
+                    <tr>
+                        <th scope="row">@employee.Name</th>
+                        <th scope="row">@employee.MidName</th>
+                        <th scope="row">@employee.LastName</th>
+                        <th scope="row">@employee.Department</th>
+                        <th scope="row">@employee.DepPhone</th>
+                        <th scope="row">@Html.ActionLink("Details", "GetEmployeeDetails", "Home", new { email = employee.Email }, null)</th>
+                        <th scope="row">@Html.ActionLink("Update", "UpdateEmployee", "Home", new { id = employee.Id }, null)</th>
+                        <th scope="row">
+                            <a class="submit" data-toggle="modal" data-target="#deleteConfirm">Delete</a>
+                            @{var imp = employee; }}
+                            @{ Html.RenderPartial("Delete", imp);}
+
+                            @Html.ActionLink("Delete", "Delete", "Home", new { email = employee.Email })
+                        </th>
+                    </tr>
+                                }
+            </tbody>
+        </table>
+    </div>
+    @Html.ActionLink("Add", "AddEmployee", "Home", new { }, new { @class = "btn btn-block btn-default" })
+                                }
+<p> </p>
+@Html.ActionLink("GoSearch>>", "Index", "Search", new { @class = "btn btn-default" })

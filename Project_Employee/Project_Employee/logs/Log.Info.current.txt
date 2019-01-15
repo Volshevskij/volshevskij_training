@@ -1,0 +1,1 @@
+2019-01-15 03:54:10.0715 Project_Employee.MvcApplication.Application_Start Info: Application Start  RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => MvcApplication.Application_Start

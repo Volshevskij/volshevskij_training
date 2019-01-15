@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Project_Employee.Models.ApplicationUser>
+
+@{
+    ViewBag.Title = "Users";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm())
+{
+    <div class="text-center">
+        <br />
+        <table class="table table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Login</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Id</th>
+                    <th scope="col">Controls</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var user in Model)
+                {
+                    <tr>
+                        <th scope="row">@user.Login</th>
+                        <th scope="row">@user.Email</th>
+                        <th scope="row">@user.Id</th>
+                        <th scope="row">@Html.ActionLink("Update", "UpdateUser", "Admin", new { name = user.UserName }, null)</th>
+                        <th scope="row">
+                            @Html.ActionLink("Delete", "Delete", "Admin", new { email = user.Email }, null)
+                        </th>
+                    </tr>
+                                }
+            </tbody>
+        </table>
+    </div>
+    @Html.ActionLink("Добавить", "AddUser", "Admin", new { }, new { @class = "btn btn-block btn-default" })
+                                }
+
