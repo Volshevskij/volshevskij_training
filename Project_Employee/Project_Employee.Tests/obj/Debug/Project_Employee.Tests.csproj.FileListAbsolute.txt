@@ -1,0 +1,2 @@
+C:\Users\User\source\repos\Project_Employee\Project_Employee.Tests\obj\Debug\Project_Employee.Tests.csprojResolveAssemblyReference.cache
+C:\Users\User\source\repos\Project_Employee\Project_Employee.Tests\obj\Debug\Project_Employee.Tests.csproj.CoreCompileInputs.cache

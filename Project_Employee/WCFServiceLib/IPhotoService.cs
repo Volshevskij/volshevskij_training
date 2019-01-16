@@ -12,6 +12,6 @@ namespace WCFServiceLib
     public interface IPhotoService
     {
         [OperationContract]
-        void DoWork();
+        byte[] GetPhoto(string path);
     }
 }

@@ -1,0 +1,34 @@
+﻿@model Common.Employee
+
+<p> </p>
+<p> </p>
+<p> </p>
+
+<tr>@Html.ActionLink("Back", "EditorPage", "Home", new { @class = "btn btn-block btn-default" })</tr>
+
+
+<p> </p>
+@{string img = "~/Content/Pics/" + Model.PhotoUrl; }
+<img src="@Url.Content(img)" width="200" height="200" />
+
+<p>Name: @Model.Name</p>
+<p>MidName: @Model.MidName</p>
+<p>LastName: @Model.LastName</p>
+<p>Email: @Model.Email</p>
+<p>Adress: @Model.Adress</p>
+<p>Phone: @Model.Phone</p>
+<p>MaritalStatus: @Model.MaritalStatus</p>
+<p>WorkPeriod: @Model.WorkPeriod</p>
+<p>Status: @Model.Status</p>
+
+
+
+<p>Department: @Model.Department</p>
+<p>Department Adress: @Model.DepAdress</p>
+<p>Department Phone: @Model.DepPhone</p>
+<p>Department Description: @Model.DepDescription</p>
+
+
+
+
+ 

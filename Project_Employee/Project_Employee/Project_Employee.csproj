@@ -212,6 +212,11 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\StructuremapMvc.cs" />
+    <Compile Include="Connected Services\PhotoService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -253,6 +258,13 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Connected Services\PhotoService\item.disco" />
+    <None Include="Connected Services\PhotoService\configuration91.svcinfo" />
+    <None Include="Connected Services\PhotoService\configuration.svcinfo" />
+    <None Include="Connected Services\PhotoService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -267,6 +279,13 @@
     <Content Include="EmployeeDS.xsc">
       <DependentUpon>EmployeeDS.xsd</DependentUpon>
     </Content>
+    <None Include="Connected Services\PhotoService\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\PhotoService\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\PhotoService\PhotoService.wsdl" />
     <None Include="EmployeeDS.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
@@ -275,6 +294,7 @@
     <Content Include="EmployeeDS.xss">
       <DependentUpon>EmployeeDS.xsd</DependentUpon>
     </Content>
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -337,7 +357,9 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\Default\" />
+    <Folder Include="Content\Out\" />
     <Folder Include="Content\Pics\" />
+    <Folder Include="Content\Pull\" />
     <Folder Include="Content\Temp\" />
   </ItemGroup>
   <ItemGroup>
@@ -373,6 +395,12 @@
     <EmbeddedResource Include="Migrations\201901142159287_DataMigration2.resx">
       <DependentUpon>201901142159287_DataMigration2.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\PhotoService\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

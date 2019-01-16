@@ -24,7 +24,37 @@ namespace Project_Employee.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            foreach (var file in System.IO.Directory.GetFiles(Server.MapPath("~") + "/Content/Out"))
+            {
+                System.IO.File.Delete(file);
+            }
+
+            var client = new PhotoService.PhotoServiceClient("BasicHttpBinding_IPhotoService");
+
+            var path = "D:/For some shit/For some shit/Файлы/Pull"; //Path.Combine(Server.MapPath("~/Content/Pull/"));
+
+            var path2 = Path.Combine(Server.MapPath("~/Content/Out/def.jpg"));
+
+            byte[] buffer = client.GetPhoto(path);
+
+            FileStream stream = new FileStream(path2, FileMode.OpenOrCreate);
+
+            try
+            {
+                stream.Write(buffer, 0, buffer.Length);
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                if (stream != null)
+                {
+                    stream.Close();
+                }
+
+            }
 
             return View();
         }

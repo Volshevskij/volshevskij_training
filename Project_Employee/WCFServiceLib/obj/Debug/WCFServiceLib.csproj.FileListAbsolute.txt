@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\Project_Employee\WCFServiceLib\bin\Debug\WCFServiceLib.dll.config
+C:\Users\User\source\repos\Project_Employee\WCFServiceLib\bin\Debug\WCFServiceLib.dll
+C:\Users\User\source\repos\Project_Employee\WCFServiceLib\bin\Debug\WCFServiceLib.pdb
+C:\Users\User\source\repos\Project_Employee\WCFServiceLib\obj\Debug\WCFServiceLib.csprojResolveAssemblyReference.cache
+C:\Users\User\source\repos\Project_Employee\WCFServiceLib\obj\Debug\WCFServiceLib.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Project_Employee\WCFServiceLib\obj\Debug\WCFServiceLib.dll
+C:\Users\User\source\repos\Project_Employee\WCFServiceLib\obj\Debug\WCFServiceLib.pdb

@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFServiceLib", "WCFServiceLib\WCFServiceLib.csproj", "{D6C13EBD-2837-4E48-B816-7C89187B4FA4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoServiceHost", "PhotoServiceHost\PhotoServiceHost.csproj", "{19A0946D-8A4F-40F6-B3BF-D04F26ABE02A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfService1", "WcfService1\WcfService1.csproj", "{E2854200-C1D4-4899-B7F7-E802DF3589D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{D6C13EBD-2837-4E48-B816-7C89187B4FA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6C13EBD-2837-4E48-B816-7C89187B4FA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6C13EBD-2837-4E48-B816-7C89187B4FA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19A0946D-8A4F-40F6-B3BF-D04F26ABE02A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19A0946D-8A4F-40F6-B3BF-D04F26ABE02A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19A0946D-8A4F-40F6-B3BF-D04F26ABE02A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19A0946D-8A4F-40F6-B3BF-D04F26ABE02A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2854200-C1D4-4899-B7F7-E802DF3589D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2854200-C1D4-4899-B7F7-E802DF3589D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2854200-C1D4-4899-B7F7-E802DF3589D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2854200-C1D4-4899-B7F7-E802DF3589D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

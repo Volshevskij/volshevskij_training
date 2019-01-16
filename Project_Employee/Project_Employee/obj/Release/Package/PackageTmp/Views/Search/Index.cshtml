@@ -1,0 +1,24 @@
+﻿@model Common.Employee
+
+@using (Html.BeginForm())
+{
+
+    <p> </p>
+    <div class="form-group">
+        <input type="text" name="value" class="form-control" placeholder="Search here" id="ls"/>
+    </div>
+        <p>Search Type</p>
+        <p><input type="radio" name="name" value="name" checked = "checked" > Name</p>
+
+        <p><input type="radio" name="name" value="midname"> MidName</p>
+
+        <p><input type="radio" name="name" value="lastname"> LastName</p>
+
+        <p><input type="radio" name="name" value="status"> Status</p>
+
+        <p><input type="radio" name="name" value="department"> Department</p>
+
+        <input type="submit" name="midname" value="Search" class="btn-default"/>
+
+        }
+

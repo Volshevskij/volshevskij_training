@@ -1,0 +1,10 @@
+C:\Users\User\source\repos\Project_Employee\PhotoServiceHost\bin\Debug\PhotoServiceHost.exe.config
+C:\Users\User\source\repos\Project_Employee\PhotoServiceHost\bin\Debug\PhotoServiceHost.exe
+C:\Users\User\source\repos\Project_Employee\PhotoServiceHost\bin\Debug\PhotoServiceHost.pdb
+C:\Users\User\source\repos\Project_Employee\PhotoServiceHost\bin\Debug\WCFServiceLib.dll
+C:\Users\User\source\repos\Project_Employee\PhotoServiceHost\bin\Debug\WCFServiceLib.pdb
+C:\Users\User\source\repos\Project_Employee\PhotoServiceHost\bin\Debug\WCFServiceLib.dll.config
+C:\Users\User\source\repos\Project_Employee\PhotoServiceHost\obj\Debug\PhotoServiceHost.csprojResolveAssemblyReference.cache
+C:\Users\User\source\repos\Project_Employee\PhotoServiceHost\obj\Debug\PhotoServiceHost.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Project_Employee\PhotoServiceHost\obj\Debug\PhotoServiceHost.exe
+C:\Users\User\source\repos\Project_Employee\PhotoServiceHost\obj\Debug\PhotoServiceHost.pdb
