@@ -1,14 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace Project_Employee.Controllers
 {
     public class SearchController : Controller
     {
-        BusinessLogic.Bridge bridge = new BusinessLogic.Bridge();
+        BusinessLogic.IBridge bridge;
+
+        public SearchController(BusinessLogic.IBridge _bridge)
+        {
+            this.bridge = _bridge;
+        }
 
         [HttpGet]
         [Authorize(Roles = "editor")]

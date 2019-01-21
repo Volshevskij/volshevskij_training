@@ -313,7 +313,9 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Web.config" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -383,6 +385,14 @@
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{cc9de183-de19-43c3-9966-09f5c48eb4d7}</Project>
       <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{4E8AF5C1-2348-4F9D-B201-46BCDEE7643A}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DI\DI.csproj">
+      <Project>{7aa5a433-0ccf-4aad-9a84-8f8e017eb497}</Project>
+      <Name>DI</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

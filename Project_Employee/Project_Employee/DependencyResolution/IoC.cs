@@ -18,10 +18,11 @@
 
 namespace Project_Employee.DependencyResolution {
     using StructureMap;
+    using DI;
 	
     public static class IoC {
         public static IContainer Initialize() {
-            return new Container(c => c.AddRegistry<DefaultRegistry>());
+            return new Container(c => c.AddRegistry<MainRegistry>());
         }
     }
 }

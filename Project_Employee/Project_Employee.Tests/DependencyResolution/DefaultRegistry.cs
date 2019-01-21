@@ -16,6 +16,8 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 namespace Project_Employee.Tests.DependencyResolution {
+    using BusinessLogic;
+    using DataAccessLayer;
     using StructureMap.Configuration.DSL;
     using StructureMap.Graph;
 	
@@ -25,9 +27,10 @@ namespace Project_Employee.Tests.DependencyResolution {
         public DefaultRegistry() {
             Scan(
                 scan => {
-                    scan.TheCallingAssembly();
                     scan.WithDefaultConventions();
-					scan.With(new ControllerConvention());
+                    scan.AssemblyContainingType<BusinessLogic.BLRegistry>();
+                    scan.AssemblyContainingType<DataAccess.DARegistry>();
+                    scan.LookForRegistries();
                 });
             //For<IExample>().Use<Example>();
         }

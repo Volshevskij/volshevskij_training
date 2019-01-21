@@ -16,6 +16,8 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 namespace Project_Employee.DependencyResolution {
+    using BusinessLogic;
+    using DataAccessLayer;
     using StructureMap.Configuration.DSL;
     using StructureMap.Graph;
 	

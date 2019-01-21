@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataAccessLayer
 {
-    public class SqlServerAccess
+    public class SqlServerAccess:ISqlServerAccess
     {
         private const string connectionString = @"Data Source=АНАНАС\SQLEXPRESS;Initial Catalog=EmployeeDB_1;Integrated Security=True;Pooling=False";
 
@@ -126,9 +123,9 @@ namespace DataAccessLayer
                 {
                     command.ExecuteNonQuery();
                 }
-                catch
+                catch(Exception ex)
                 {
-                    Console.WriteLine("МЫЛО!!!!!!!");
+                    throw ex;
                 }
             }
         }
@@ -252,9 +249,9 @@ namespace DataAccessLayer
                 {
                     command.ExecuteNonQuery();
                 }
-                catch
+                catch (Exception ex)
                 {
-                    //error
+                    throw ex;
                 }
             }
         }
@@ -316,8 +313,14 @@ namespace DataAccessLayer
                     Value = mail
                 };
                 command.Parameters.Add(emailParam);
-
-                command.ExecuteNonQuery();
+                try
+                {
+                    command.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
             }
         }
 

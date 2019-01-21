@@ -1,4 +1,3 @@
-C:\Users\User\source\repos\Project_Employee\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
 C:\Users\User\source\repos\Project_Employee\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
 C:\Users\User\source\repos\Project_Employee\Common\bin\Debug\Common.dll
 C:\Users\User\source\repos\Project_Employee\Common\bin\Debug\Common.pdb
@@ -19,3 +18,4 @@ C:\Users\User\source\repos\Project_Employee\Common\obj\Debug\Common.dll
 C:\Users\User\source\repos\Project_Employee\Common\obj\Debug\Common.pdb
 C:\Users\User\source\repos\Project_Employee\Common\bin\Debug\NLog.dll
 C:\Users\User\source\repos\Project_Employee\Common\bin\Debug\NLog.xml
+C:\Users\User\source\repos\Project_Employee\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache

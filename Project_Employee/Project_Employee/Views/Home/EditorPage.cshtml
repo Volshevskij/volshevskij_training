@@ -33,7 +33,7 @@
                     <th scope="row">@employee.DepPhone</th>
                     <th scope="row">@employee.Email</th>
                     <th scope="row">@Html.ActionLink("Details", "GetEmployeeDetails", "Home", new { email = employee.Email }, null)</th>
-                    <th scope="row">@Html.ActionLink("Update", "UpdateEmployee", "Home", new { id = employee.Id }, null)</th>
+                    <th scope="row">@Html.ActionLink("Update", "UpdateEmployee", "Home", new { email = employee.Email, id = employee.Id}, null)</th>
                     <th scope="row">
                         <a class="submit" data-toggle="modal" data-target="#deleteConfirm">Delete</a>
                         @{var imp = employee; }}
@@ -48,5 +48,5 @@
 </div>
 @Html.ActionLink("Add", "AddEmployee", "Home", new { }, new { @class = "btn btn-block btn-default" })
  }
-
+<p> </p>
 @Html.ActionLink("GoSearch>>", "Index", "Search",new { } , new { @class = "btn btn-default" })

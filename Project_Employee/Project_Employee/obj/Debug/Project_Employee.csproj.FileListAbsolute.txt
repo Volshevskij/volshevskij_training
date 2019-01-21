@@ -161,3 +161,5 @@ C:\Users\User\source\repos\Project_Employee\Project_Employee\obj\Debug\Project_E
 C:\Users\User\source\repos\Project_Employee\Project_Employee\bin\NLog.dll
 C:\Users\User\source\repos\Project_Employee\Project_Employee\bin\BusinessLogic.dll.config
 C:\Users\User\source\repos\Project_Employee\Project_Employee\bin\NLog.xml
+C:\Users\User\source\repos\Project_Employee\Project_Employee\bin\DI.dll
+C:\Users\User\source\repos\Project_Employee\Project_Employee\bin\DI.pdb

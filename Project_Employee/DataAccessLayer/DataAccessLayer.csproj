@@ -58,6 +58,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DARegistry.cs" />
+    <Compile Include="Interfaces\ISqlServerAccess.cs" />
     <Compile Include="SqlServerAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

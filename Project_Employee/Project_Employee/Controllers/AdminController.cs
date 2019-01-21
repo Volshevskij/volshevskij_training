@@ -1,9 +1,6 @@
 ﻿using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Project_Employee.Models;
-using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
@@ -13,9 +10,6 @@ namespace Project_Employee.Controllers
 {
     public class AdminController : Controller
     {
-        //static ApplicationDbContext context = new ApplicationDbContext();
-        //ApplicationManager manager = new ApplicationManager(new UserStore<ApplicationUser>(context));
-        //RoleManager<IdentityRole> roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(context));
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
 
@@ -61,9 +55,16 @@ namespace Project_Employee.Controllers
 
         [Authorize(Roles = "admin")]
         public ActionResult Delete(string email)
-        {
+        {           
             var user = UserManager.FindByEmail(email);
-            UserManager.Delete(user);
+            if (User.Identity.GetUserId() == user.Id)
+            {
+                return RedirectToAction("AdminPage");
+            }
+            else
+            {
+                UserManager.Delete(user);
+            }               
             return RedirectToAction("AdminPage");
         }
 

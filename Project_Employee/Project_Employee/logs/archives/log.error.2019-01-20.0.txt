@@ -1,0 +1,11 @@
+2019-01-19 00:45:49.5350 Project_Employee.MvcApplication.Application_Start Info: Application Start  RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => MvcApplication.Application_Start
+2019-01-19 00:47:41.0788 Project_Employee.MvcApplication.Application_Error Info: Application Error  RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => MvcApplication.Application_Error
+2019-01-19 00:54:49.0921 Project_Employee.MvcApplication.Application_End Info: Application End  RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => MvcApplication.Application_End
+2019-01-19 00:55:22.8200 Project_Employee.MvcApplication.Application_Start Info: Application Start  RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => MvcApplication.Application_Start
+2019-01-19 00:56:47.8200 Project_Employee.MvcApplication.Application_Error Info: Application Error  RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => MvcApplication.Application_Error
+2019-01-19 00:58:46.1075 Project_Employee.MvcApplication.Application_Error Info: Application Error  RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => MvcApplication.Application_Error
+2019-01-19 01:01:08.2901 Project_Employee.MvcApplication.Application_End Info: Application End  RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => MvcApplication.Application_End
+2019-01-19 01:01:51.3919 Project_Employee.MvcApplication.Application_Start Info: Application Start  RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => MvcApplication.Application_Start
+2019-01-19 01:05:59.1810 Project_Employee.MvcApplication.Application_Error Info: Application Error  RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => MvcApplication.Application_Error
+2019-01-19 01:12:21.1042 Project_Employee.MvcApplication.Application_End Info: Application End  RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => MvcApplication.Application_End
+2019-01-19 01:12:30.7786 Project_Employee.MvcApplication.Application_Start Info: Application Start  RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => MvcApplication.Application_Start

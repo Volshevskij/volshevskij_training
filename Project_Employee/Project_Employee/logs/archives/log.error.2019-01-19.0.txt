@@ -1,0 +1,2 @@
+2019-01-18 18:36:20.8001 Project_Employee.MvcApplication.Application_Start Info: Application Start  RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => MvcApplication.Application_Start
+2019-01-18 18:44:05.9311 Project_Employee.MvcApplication.Application_End Info: Application End  RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => MvcApplication.Application_End

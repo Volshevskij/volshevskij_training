@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
@@ -9,16 +7,22 @@ namespace Project_Employee.Controllers
 {
     public class HomeController : Controller
     {
-        BusinessLogic.Bridge bridge = new BusinessLogic.Bridge();
+        BusinessLogic.IBridge bridge;
+
+        public HomeController(BusinessLogic.IBridge _bridge)
+        {
+            this.bridge = _bridge;
+        }
+
+        //public HomeController()
+        //{
+        //    bridge = new BusinessLogic.Bridge();
+        //}
+
         string defaultName = "Default/default.jpg";
 
         public ActionResult Index()
         {
-            foreach (var file in System.IO.Directory.GetFiles(Server.MapPath("~") + "/Content/Pics"))
-            {
-                System.IO.File.Delete(file);
-            }
-
             return View(bridge.GetFullEmployee());
         }
 
@@ -31,11 +35,20 @@ namespace Project_Employee.Controllers
 
             var client = new PhotoService.PhotoServiceClient("BasicHttpBinding_IPhotoService");
 
-            var path = "D:/For some shit/For some shit/Файлы/Pull"; //Path.Combine(Server.MapPath("~/Content/Pull/"));
+            var path = "D:/For some shit/For some shit/Файлы/Pull/";
 
             var path2 = Path.Combine(Server.MapPath("~/Content/Out/def.jpg"));
 
-            byte[] buffer = client.GetPhoto(path);
+            byte[] buffer = new byte[1];
+
+            try
+            {
+               buffer  = client.GetPhoto(path);
+            }
+            catch
+            {
+                return RedirectToAction("Index");
+            }
 
             FileStream stream = new FileStream(path2, FileMode.OpenOrCreate);
 
@@ -45,7 +58,7 @@ namespace Project_Employee.Controllers
             }
             catch (Exception ex)
             {
-
+                throw new Exception(ex.Message);
             }
             finally
             {
@@ -59,19 +72,13 @@ namespace Project_Employee.Controllers
             return View();
         }
 
-        [Authorize(Roles = "admin")]
-        public ActionResult AdminPage()
-        {
-            return View();
-        }
-
         [Authorize(Roles = "editor")]
         public ActionResult EditorPage()
         {
-            foreach (var file in System.IO.Directory.GetFiles(Server.MapPath("~") + "/Content/Pics"))
-            {
-                System.IO.File.Delete(file);
-            }
+            //foreach (var file in System.IO.Directory.GetFiles(Server.MapPath("~") + "/Content/Pics"))
+            //{
+            //    System.IO.File.Delete(file);
+            //}
 
             return View(bridge.GetFullEmployee());
         }
@@ -136,9 +143,9 @@ namespace Project_Employee.Controllers
 
         [HttpGet]
         [Authorize(Roles = "editor")]
-        public ActionResult UpdateEmployee(int id)
+        public ActionResult UpdateEmployee(string email, int id)
         {
-            Common.Employee worker = new Common.Employee();
+            Common.Employee worker = bridge.GetEmailSelect(email);
             worker.Id = id;
             return View(worker);
         }
@@ -199,7 +206,7 @@ namespace Project_Employee.Controllers
             }
             catch (Exception ex)
             {
-
+                throw new Exception(ex.Message);
             }
             finally
             {

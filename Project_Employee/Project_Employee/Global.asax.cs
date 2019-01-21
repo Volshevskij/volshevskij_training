@@ -15,6 +15,11 @@ namespace Project_Employee
         private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
         protected void Application_Start()
         {
+            foreach (var file in System.IO.Directory.GetFiles(Server.MapPath("~") + "/Content/Pics"))
+            {
+                System.IO.File.Delete(file);
+            }
+
             logger.Info("Application Start");
 
             Database.SetInitializer<ApplicationDbContext>(new AppUserInitializer());
@@ -23,15 +28,13 @@ namespace Project_Employee
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-
-            //WebApiConfig.Register(GlobalConfiguration.Configuration);
         }
-        public void Init()
+        public override void Init()
         {
             logger.Info("Application Init");
         }
 
-        public void Dispose()
+        public override void Dispose()
         {
             logger.Info("Application Dispose");
         }
