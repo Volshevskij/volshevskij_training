@@ -35,10 +35,6 @@
                     <th scope="row">@Html.ActionLink("Details", "GetEmployeeDetails", "Home", new { email = employee.Email }, null)</th>
                     <th scope="row">@Html.ActionLink("Update", "UpdateEmployee", "Home", new { email = employee.Email, id = employee.Id}, null)</th>
                     <th scope="row">
-                        <a class="submit" data-toggle="modal" data-target="#deleteConfirm">Delete</a>
-                        @{var imp = employee; }}
-                        @{ Html.RenderPartial("Delete", imp);}
-
                         @Html.ActionLink("Delete", "Delete", new { email = employee.Email })
                     </th>
                 </tr>

@@ -1,6 +1,5 @@
 ﻿@model IEnumerable<Common.Employee>
 @{
-    ViewBag.Title = "Light DB";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -16,7 +15,10 @@
                     <th scope="col">LastName</th>
                     <th scope="col">Department</th>
                     <th scope="col">DepPhone</th>
-                    <th scope="col">Controls</th>
+                    @if (ViewContext.HttpContext.User.IsInRole("editor"))
+                    {
+                        <th scope="col">Controls</th>
+                    }
                     <th></th>
                     <th></th>
                 </tr>
@@ -30,21 +32,26 @@
                         <th scope="row">@employee.LastName</th>
                         <th scope="row">@employee.Department</th>
                         <th scope="row">@employee.DepPhone</th>
-                        <th scope="row">@Html.ActionLink("Details", "GetEmployeeDetails", "Home", new { email = employee.Email }, null)</th>
-                        <th scope="row">@Html.ActionLink("Update", "UpdateEmployee", "Home", new { id = employee.Id }, null)</th>
-                        <th scope="row">
-                            <a class="submit" data-toggle="modal" data-target="#deleteConfirm">Delete</a>
-                            @{var imp = employee; }}
-                            @{ Html.RenderPartial("Delete", imp);}
-
-                            @Html.ActionLink("Delete", "Delete", "Home", new { email = employee.Email })
-                        </th>
+                        @if (ViewContext.HttpContext.User.IsInRole("editor"))
+                        {
+                            <th scope="row">@employee.Email</th>
+                            <th scope="row">@Html.ActionLink("Details", "GetEmployeeDetails", "Home", new { email = employee.Email }, null)</th>
+                            <th scope="row">@Html.ActionLink("Update", "UpdateEmployee", "Home", new { id = employee.Id }, null)</th>
+                            <th scope="row">
+                                @Html.ActionLink("Delete", "Delete", "Home", new { email = employee.Email })
+                            </th>
+                        }
                     </tr>
-                                }
+                }
             </tbody>
         </table>
     </div>
-    @Html.ActionLink("Add", "AddEmployee", "Home", new { }, new { @class = "btn btn-block btn-default" })
-                                }
+
+    if (ViewContext.HttpContext.User.IsInRole("editor"))
+    {
+
+        @Html.ActionLink("Add", "AddEmployee", "Home", new { }, new { @class = "btn btn-block btn-default" })
+    }
+}
 <p> </p>
 @Html.ActionLink("GoSearch>>", "Index", "Search", new { @class = "btn btn-default" })

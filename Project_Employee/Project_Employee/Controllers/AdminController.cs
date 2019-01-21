@@ -111,9 +111,9 @@ namespace Project_Employee.Controllers
         public ActionResult UpdateUser(string name)
         {
             var userToDel = UserManager.FindByName(name);
-            UserManager.Delete(userToDel);
             RegisterViewModel model = new RegisterViewModel();
-
+            model.Login = userToDel.Login;
+            model.Email = userToDel.Email;
             return View(model);
         }
 
@@ -121,6 +121,9 @@ namespace Project_Employee.Controllers
         [Authorize(Roles = "admin")]
         public async Task<ActionResult> UpdateUser(RegisterViewModel model, string name)
         {
+            var userToDel = UserManager.FindByEmail(model.Email);
+            UserManager.Delete(userToDel);
+
             if (ModelState.IsValid)
             {
                 var user = new ApplicationUser { UserName = model.Email, Email = model.Email, Login = model.Login };

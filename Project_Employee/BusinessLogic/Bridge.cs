@@ -60,6 +60,11 @@ namespace BusinessLogic
             return _content.GetStatusSelect(status);
         }
 
+        public List<Common.Employee> GetWorkPeriodSelect(string workPeriod)
+        {
+            return _content.GetWorkPeriodSelect(workPeriod);
+        }
+
         public Common.Employee GetEmailSelect(string email)
         {
             return _content.GetEmailSelect(email);

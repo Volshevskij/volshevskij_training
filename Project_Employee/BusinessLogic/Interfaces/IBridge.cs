@@ -13,6 +13,7 @@ namespace BusinessLogic
         List<Common.Employee> GetLastNameSelect(string lastName);
         List<Common.Employee> GetDepartmentSelect(string department);
         List<Common.Employee> GetStatusSelect(string status);
+        List<Common.Employee> GetWorkPeriodSelect(string workPeriod);
         Common.Employee GetEmailSelect(string email);
     }
 }

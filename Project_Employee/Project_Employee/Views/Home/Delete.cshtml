@@ -1,0 +1,13 @@
+﻿@model Common.Employee
+
+<p class="h3 mb-3 font-weight-normal">Are you sure you want to delete employee?</p>
+<p class="h3 mb-3 font-weight-normal">@Model.LastName</p>
+
+@using (Html.BeginForm("Delete", "Home", new { email = Model.Email }, FormMethod.Post))
+{
+    <button type="submit" class="btn btn-default">Delete</button>
+}
+
+<p> </p>
+
+<tr>@Html.ActionLink("Close", "EditorPage", "Home", new { @class = "btn btn-default" })</tr>

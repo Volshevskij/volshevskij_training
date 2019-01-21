@@ -1,6 +1,5 @@
 ﻿@model IEnumerable<Common.Employee>
 @{
-    ViewBag.Title = "Light DB";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -32,3 +31,5 @@
         </tbody>
     </table>
 </div>
+
+@Html.ActionLink("Go Search>>", "Index", "Search",null, new { @class = "btn btn-default" })

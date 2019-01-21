@@ -41,8 +41,10 @@
     <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
             <input type="submit" class="btn btn-default" value="Update" />
+            @Html.ActionLink("Cancel", "AdminPage", "Admin", new { @class = "btn btn-default" })
         </div>
     </div>
+    
 }
 
 @section Scripts {

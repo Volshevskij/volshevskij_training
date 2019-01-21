@@ -574,6 +574,56 @@ namespace DataAccessLayer
             return workers;
         }
 
+        public List<Common.Employee> GetWorkPeriodSelect(string workPeriod)
+        {
+            List<Common.Employee> workers = new List<Common.Employee>();
+
+            string sqlExpression = "WorkPeriodSelect";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand(sqlExpression, connection);
+                command.CommandType = System.Data.CommandType.StoredProcedure;
+
+                SqlParameter workPeriodParam = new SqlParameter
+                {
+                    ParameterName = "@WorkPeriod",
+                    Value = workPeriod
+                };
+                command.Parameters.Add(workPeriodParam);
+
+
+                var reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+
+                    while (reader.Read())
+                    {
+                        Common.Employee worker = new Common.Employee();
+                        worker.Email = reader.GetString(0);
+                        worker.Name = reader.GetString(1);
+                        worker.MidName = reader.GetString(2);
+                        worker.LastName = reader.GetString(3);
+                        worker.Department = reader.GetString(4);
+                        worker.DepPhone = reader.GetString(5);
+                        worker.DepAdress = reader.GetString(6);
+                        worker.DepDescription = reader.GetString(7);
+                        worker.Phone = reader.GetString(8);
+                        worker.Adress = reader.GetString(9);
+                        worker.Status = reader.GetString(10);
+                        worker.Photo = (byte[])reader.GetValue(11);
+                        worker.WorkPeriod = reader.GetString(12);
+                        worker.MaritalStatus = reader.GetString(13);
+                        worker.Id = reader.GetInt32(14);
+                        workers.Add(worker);
+                    }
+                }
+                reader.Close();
+            }
+            return workers;
+        }
+
         public Common.Employee GetEmailSelect(string email)
         {
             Common.Employee worker = new Common.Employee();

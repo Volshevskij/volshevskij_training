@@ -35,7 +35,7 @@ namespace Project_Employee.Controllers
 
             var client = new PhotoService.PhotoServiceClient("BasicHttpBinding_IPhotoService");
 
-            var path = "D:/For some shit/For some shit/Файлы/Pull/";
+            var path = "D:/Pull/";
 
             var path2 = Path.Combine(Server.MapPath("~/Content/Out/def.jpg"));
 
@@ -82,13 +82,29 @@ namespace Project_Employee.Controllers
 
             return View(bridge.GetFullEmployee());
         }
-     
+
+        [HttpGet]
         [Authorize(Roles = "editor")]
         public ActionResult Delete(string email)
         {
             if (email != null)
             {
-                bridge.DeleteEmployee(email);
+                var worker = bridge.GetEmailSelect(email);
+                return View(worker);
+            }
+            else
+            {
+                return HttpNotFound();
+            }
+        }
+
+        [HttpPost]
+        [Authorize(Roles = "editor")]
+        public ActionResult Delete(Common.Employee worker)
+        {
+            if (worker != null)
+            {
+                bridge.DeleteEmployee(worker.Email);
                 return RedirectToAction("EditorPage");
             }
             else
@@ -130,8 +146,14 @@ namespace Project_Employee.Controllers
                 worker.Photo = new byte[1];
                 worker.Photo[0] = 0;
             }
-            
-            bridge.AddEmployee(worker);
+            try
+            {
+                bridge.AddEmployee(worker);
+            }
+            catch
+            {
+                return RedirectToAction("Fail");
+            }
 
             foreach (var filepath in System.IO.Directory.GetFiles(Server.MapPath("~") + "/Content/Temp"))
             {
@@ -176,7 +198,14 @@ namespace Project_Employee.Controllers
                 worker.Photo[0] = 0;
             }
 
-            bridge.UpdateEmployee(worker);
+            try
+            {
+                bridge.UpdateEmployee(worker);
+            }
+            catch
+            {
+                return RedirectToAction("Fail");
+            }
 
             foreach (var filepath in System.IO.Directory.GetFiles(Server.MapPath("~") + "/Content/Temp"))
             {
@@ -222,6 +251,12 @@ namespace Project_Employee.Controllers
                 tmp.PhotoUrl = defaultName;
             }
             return View(tmp);
+        }
+
+        [Authorize(Roles = "editor")]
+        public ActionResult Fail()
+        {
+            return View();
         }
     }
 }

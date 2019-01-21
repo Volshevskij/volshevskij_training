@@ -343,7 +343,6 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Admin\AdminPage.cshtml" />
     <Content Include="Views\Home\EditorPage.cshtml" />
-    <Content Include="Views\Shared\Delete.cshtml" />
     <Content Include="Views\Home\AddEmployee.cshtml" />
     <Content Include="Views\Home\UpdateEmployee.cshtml" />
     <Content Include="Views\Home\GetEmployeeDetails.cshtml" />
@@ -355,6 +354,9 @@
     <Content Include="Views\Search\DepartmentSearch.cshtml" />
     <Content Include="Views\Admin\AddUser.cshtml" />
     <Content Include="Views\Admin\UpdateUser.cshtml" />
+    <Content Include="Views\Home\Delete.cshtml" />
+    <Content Include="Views\Home\Fail.cshtml" />
+    <Content Include="Views\Search\WorkPeriodSearch.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

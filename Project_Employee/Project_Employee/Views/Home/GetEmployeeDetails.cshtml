@@ -11,22 +11,52 @@
 @{string img = "~/Content/Pics/" + Model.PhotoUrl; }
 <img src="@Url.Content(img)" width="200" height="200" />
 
-<p>Name: @Model.Name</p>
-<p>MidName: @Model.MidName</p>
-<p>LastName: @Model.LastName</p>
-<p>Email: @Model.Email</p>
-<p>Adress: @Model.Adress</p>
-<p>Phone: @Model.Phone</p>
-<p>MaritalStatus: @Model.MaritalStatus</p>
-<p>WorkPeriod: @Model.WorkPeriod</p>
-<p>Status: @Model.Status</p>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Create two equal columns that floats next to each other */
+    .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+</style>
+
+<div class="row">
+    <div class="column">
+        <p class="h3 mb-3 font-weight-normal">Name: @Model.Name</p>
+        <p class="h3 mb-3 font-weight-normal">MidName: @Model.MidName</p>
+        <p class="h3 mb-3 font-weight-normal">LastName: @Model.LastName</p>
+        <p class="h3 mb-3 font-weight-normal">Email: @Model.Email</p>
+        <p class="h3 mb-3 font-weight-normal">Adress: @Model.Adress</p>
+        <p class="h3 mb-3 font-weight-normal">Phone: @Model.Phone</p>
+        <p class="h3 mb-3 font-weight-normal">MaritalStatus: @Model.MaritalStatus</p>
+        <p class="h3 mb-3 font-weight-normal">WorkPeriod: @Model.WorkPeriod</p>
+        <p class="h3 mb-3 font-weight-normal">Status: @Model.Status</p>
+    </div>
+
+    <div class="column">
+        <p class="h3 mb-3 font-weight-normal">Department: @Model.Department</p>
+        <p class="h3 mb-3 font-weight-normal">Department Adress: @Model.DepAdress</p>
+        <p class="h3 mb-3 font-weight-normal">Department Phone: @Model.DepPhone</p>
+        <p class="h3 mb-3 font-weight-normal">Department Description: @Model.DepDescription</p>
+    </div>
+</div>
 
 
 
-<p>Department: @Model.Department</p>
-<p>Department Adress: @Model.DepAdress</p>
-<p>Department Phone: @Model.DepPhone</p>
-<p>Department Description: @Model.DepDescription</p>
+
+
+
 
 
 

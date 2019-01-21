@@ -1,176 +1,214 @@
 ﻿@model Common.Employee
 
 
-<div class="container">
     @using (Html.BeginForm("AddEmployee", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
     {
+
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            .column {
+                float: left;
+                width: 50%;
+                padding: 10px;
+            }
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+        </style>
 
         <h1 class="h3 mb-3 font-weight-normal">Please add an employee</h1>
         <h1>     </h1>
         <h1 class="h3 mb-3 font-weight-normal">ATTENTION ALL FIELDS MUST BE FILLED!</h1>
 
-        @Html.TextBoxFor(m => m.Name, new
-   {
-       @class = "form-control",
-       @placeholder = @Html.DisplayNameFor(x => x.Name),
-       @type = "text",
-       @autofocus = true,
-       @required = true
-   })
-        @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
-
-        <br />
-
-        @Html.TextBoxFor(m => m.MidName, new
-   {
-       @class = "form-control",
-       @placeholder = @Html.DisplayNameFor(x => x.MidName),
-       @type = "text"
-   })
-        @Html.ValidationMessageFor(model => model.MidName, "", new { @class = "text-danger" })
-
-        <br />
-
-        @Html.TextBoxFor(m => m.LastName, new
-   {
-       @class = "form-control",
-       @placeholder = @Html.DisplayNameFor(x => x.LastName),
-       @type = "text",
-       @required = true
-   })
-        @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
-
-        <br />
-
-        @Html.TextBoxFor(m => m.Email, new
-   {
-       @class = "form-control",
-       @placeholder = @Html.DisplayNameFor(x => x.Email),
-       @type = "text",
-       @required = true
-   })
-        @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
-
-        <br />
-
-        @Html.TextBoxFor(m => m.Department, new
-   {
-       @class = "form-control",
-       @placeholder = @Html.DisplayNameFor(x => x.Department),
-       @type = "text",
-       @required = true
-   })
-        @Html.ValidationMessageFor(model => model.Department, "", new { @class = "text-danger" })
-
-        <br />
-
-        @Html.TextBoxFor(m => m.DepPhone, new
-   {
-       @class = "form-control",
-       @placeholder = @Html.DisplayNameFor(x => x.DepPhone),
-       @type = "text",
-       @required = true
-   })
-        @Html.ValidationMessageFor(model => model.DepPhone, "", new { @class = "text-danger" })
-
-        <br />
-
-        @Html.TextBoxFor(m => m.DepDescription, new
-   {
-       @class = "form-control",
-       @placeholder = @Html.DisplayNameFor(x => x.DepDescription),
-       @type = "text",
-       @required = true
-   })
-        @Html.ValidationMessageFor(model => model.DepDescription, "", new { @class = "text-danger" })
-
-        <br />
-
-        @Html.TextBoxFor(m => m.DepAdress, new
-   {
-       @class = "form-control",
-       @placeholder = @Html.DisplayNameFor(m => m.DepAdress),
-       @type = "text",
-       @required = true
-   })
-        @Html.ValidationMessageFor(model => model.DepAdress, "", new { @class = "text-danger" })
-
-        <br />
-
-        @Html.TextBoxFor(m => m.Phone, new
-   {
-       @class = "form-control",
-       @placeholder = @Html.DisplayNameFor(m => m.Phone),
-       @type = "text",
-       @required = true
-   })
-        @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
-
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-
-        <br />
-
-        @Html.TextBoxFor(m => m.Adress, new
-   {
-       @class = "form-control",
-       @placeholder = @Html.DisplayNameFor(m => m.Adress),
-       @type = "text",
-       @required = true
-   })
-        @Html.ValidationMessageFor(model => model.Adress, "", new { @class = "text-danger" })
-
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-
-        <br />
-
-        @Html.TextBoxFor(m => m.Status, new
+        <div class="row">
+            <div class="column">
+                @Html.TextBoxFor(m => m.Name, new
            {
                @class = "form-control",
-               @placeholder = @Html.DisplayNameFor(m => m.Status),
+               @placeholder = @Html.DisplayNameFor(x => x.Name),
                @type = "text",
+               @autofocus = true,
                @required = true
            })
-        @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
 
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <br />
 
-        <br />
+                @Html.TextBoxFor(m => m.MidName, new
+               {
+                   @class = "form-control",
+                   @placeholder = @Html.DisplayNameFor(x => x.MidName),
+                   @type = "text"
+               })
+                @Html.ValidationMessageFor(model => model.MidName, "", new { @class = "text-danger" })
 
-        @Html.TextBoxFor(m => m.MaritalStatus, new
-           {
-               @class = "form-control",
-               @placeholder = @Html.DisplayNameFor(m => m.MaritalStatus),
-               @type = "text",
-               @required = true
-           })
-        @Html.ValidationMessageFor(model => model.MaritalStatus, "", new { @class = "text-danger" })
+                <br />
 
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                @Html.TextBoxFor(m => m.LastName, new
+               {
+                   @class = "form-control",
+                   @placeholder = @Html.DisplayNameFor(x => x.LastName),
+                   @type = "text",
+                   @required = true
+               })
+                @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
 
-        <br />
+                <br />
 
-        @Html.TextBoxFor(m => m.WorkPeriod, new
-           {
-               @class = "form-control",
-               @placeholder = @Html.DisplayNameFor(m => m.WorkPeriod),
-               @type = "text",
-               @required = true
-           })
-        @Html.ValidationMessageFor(model => model.WorkPeriod, "", new { @class = "text-danger" })
+                @Html.TextBoxFor(m => m.Email, new
+               {
+                   @class = "form-control",
+                   @placeholder = @Html.DisplayNameFor(x => x.Email),
+                   @type = "Email",
+                   @required = true
+               })
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
 
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <br />
+                <p> </p>
+                    @Html.TextBoxFor(m => m.Phone, new
+               {
+                   @class = "form-control",
+                   @placeholder = @Html.DisplayNameFor(m => m.Phone),
+                   @type = "Number",
+                   @required = true
+               })
+                    @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
 
-        <br />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
-            <p>Photo</p>
-            <input type="file" name="file" class = "btn btn-default"/>
-            <p> </p>
-            <div class="container">
-                <button class="btn btn-lg btn-warning btn-block" type="submit">Add</button>
-                @Html.ActionLink("Cancel", "EditorPage", new { }, new { @class = "btn btn-lg btn-block" })
-            </div>   
-            
-        <br />
-    }
-</div>
+                    <br />
+
+                    @Html.TextBoxFor(m => m.Adress, new
+               {
+                   @class = "form-control",
+                   @placeholder = @Html.DisplayNameFor(m => m.Adress),
+                   @type = "text",
+                   @required = true
+               })
+                    @Html.ValidationMessageFor(model => model.Adress, "", new { @class = "text-danger" })
+
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                    <br />
+
+                    @Html.TextBoxFor(m => m.Status, new
+               {
+                   @class = "form-control",
+                   @placeholder = @Html.DisplayNameFor(m => m.Status),
+                   @type = "text",
+                   @required = true
+               })
+                    @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
+
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                    <br />
+
+                    @Html.TextBoxFor(m => m.MaritalStatus, new
+               {
+                   @class = "form-control",
+                   @placeholder = @Html.DisplayNameFor(m => m.MaritalStatus),
+                   @type = "text",
+                   @required = true
+               })
+                    @Html.ValidationMessageFor(model => model.MaritalStatus, "", new { @class = "text-danger" })
+
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                    <br />
+
+                    @Html.TextBoxFor(m => m.WorkPeriod, new
+               {
+                   @class = "form-control",
+                   @placeholder = @Html.DisplayNameFor(m => m.WorkPeriod),
+                   @type = "text",
+                   @required = true
+               })
+                    @Html.ValidationMessageFor(model => model.WorkPeriod, "", new { @class = "text-danger" })
+
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                    <br />
+            </div>
+
+            <div class="column">
+                @Html.TextBoxFor(m => m.Department, new
+            {
+                @class = "form-control",
+                @placeholder = @Html.DisplayNameFor(x => x.Department),
+                @type = "text",
+                @required = true
+            })
+                @Html.ValidationMessageFor(model => model.Department, "", new { @class = "text-danger" })
+
+                <br />
+
+                @Html.TextBoxFor(m => m.DepPhone, new
+               {
+                   @class = "form-control",
+                   @placeholder = @Html.DisplayNameFor(x => x.DepPhone),
+                   @type = "Number",
+                   @required = true
+               })
+                @Html.ValidationMessageFor(model => model.DepPhone, "", new { @class = "text-danger" })
+
+                <br />
+
+                @Html.TextBoxFor(m => m.DepAdress, new
+                           {
+                               @class = "form-control",
+                               @placeholder = @Html.DisplayNameFor(m => m.DepAdress),
+                               @type = "text",
+                               @required = true
+                           })
+                @Html.ValidationMessageFor(model => model.DepAdress, "", new { @class = "text-danger" })
+
+                <br />
+
+                @Html.TextAreaFor(m => m.DepDescription, new
+               {
+                   @class = "form-control",
+                   @placeholder = @Html.DisplayNameFor(x => x.DepDescription),
+                   @type = "text",
+                   @required = true
+               })
+                @Html.ValidationMessageFor(model => model.DepDescription, "", new { @class = "text-danger" })
+
+                <br />
+                </div>
+
+        </div>
+                    
+
+                   
+
+
+                    <p>Photo</p>
+                    <input type="file" name="file" class="btn btn-default" />
+                    <p> </p>
+                    <div class="container">
+                        <button class="btn btn-lg btn-warning btn-block" type="submit">Add</button>
+                        @Html.ActionLink("Cancel", "EditorPage", new { }, new { @class = "btn btn-lg btn-block" })
+                    </div>
+
+                    <br />
+     }
+                
+
+                <script type='text/javascript'>
+
+                    $(document).ready(function () {
+                        var input = $('.input-validation-error:first');
+
+                        if (input) {
+                            input.focus();
+                        }
+                    });
+                </script>
 

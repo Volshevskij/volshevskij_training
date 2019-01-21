@@ -12,7 +12,7 @@ namespace Project_Employee.Controllers
         }
 
         [HttpGet]
-        [Authorize(Roles = "editor")]
+        [AllowAnonymous]
         public ActionResult Index()
         {
             Common.Employee worker = new Common.Employee();
@@ -21,7 +21,7 @@ namespace Project_Employee.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "editor")]
+        [AllowAnonymous]
         public ActionResult Index(Common.Employee worker, string name, string value)
         {
             if(value == "" || value == null || name == null || name == "")
@@ -59,37 +59,49 @@ namespace Project_Employee.Controllers
                 return RedirectToAction("DepartmentSearch", worker);
             }
 
+            if (name == "workperiod") 
+            {
+                worker.WorkPeriod = value;
+                return RedirectToAction("WorkPeriodSearch", worker);
+            }
+
             return RedirectToAction("Index", worker);
         }
 
-        [Authorize(Roles = "editor")]
+        [AllowAnonymous]
         public ActionResult NameSearch(Common.Employee worker)
         {
             return View(bridge.GetNameSelect(worker.Name));
         }
 
-        [Authorize(Roles = "editor")]
+        [AllowAnonymous]
         public ActionResult MidNameSearch(Common.Employee worker)
         {
             return View(bridge.GetMidNameSelect(worker.MidName));
         }
 
-        [Authorize(Roles = "editor")]
+        [AllowAnonymous]
         public ActionResult LastNameSearch(Common.Employee worker)
         {
             return View(bridge.GetLastNameSelect(worker.LastName));
         }
 
-        [Authorize(Roles = "editor")]
+        [AllowAnonymous]
         public ActionResult StatusSearch(Common.Employee worker)
         {
             return View(bridge.GetStatusSelect(worker.Status));
         }
 
-        [Authorize(Roles = "editor")]
+        [AllowAnonymous]
         public ActionResult DepartmentSearch(Common.Employee worker)
         {
             return View(bridge.GetDepartmentSelect(worker.Department));
+        }
+
+        [AllowAnonymous]
+        public ActionResult WorkPeriodSearch(Common.Employee worker)
+        {
+            return View(bridge.GetWorkPeriodSelect(worker.WorkPeriod));
         }
     }
 }
