@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\Thw_3.2\Thw_3.2\bin\Debug\Thw_3.2.exe.config
+C:\Users\User\source\repos\Thw_3.2\Thw_3.2\bin\Debug\Thw_3.2.exe
+C:\Users\User\source\repos\Thw_3.2\Thw_3.2\bin\Debug\Thw_3.2.pdb
+C:\Users\User\source\repos\Thw_3.2\Thw_3.2\obj\Debug\Thw_3.2.csprojResolveAssemblyReference.cache
+C:\Users\User\source\repos\Thw_3.2\Thw_3.2\obj\Debug\Thw_3.2.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Thw_3.2\Thw_3.2\obj\Debug\Thw_3.2.exe
+C:\Users\User\source\repos\Thw_3.2\Thw_3.2\obj\Debug\Thw_3.2.pdb
