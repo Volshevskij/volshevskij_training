@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\Thw_4.2\Thw_4.2\obj\Debug\Thw_4.2.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Thw_4.2\Thw_4.2\bin\Debug\Thw_4.2.exe.config
+C:\Users\User\source\repos\Thw_4.2\Thw_4.2\bin\Debug\Thw_4.2.exe
+C:\Users\User\source\repos\Thw_4.2\Thw_4.2\bin\Debug\Thw_4.2.pdb
+C:\Users\User\source\repos\Thw_4.2\Thw_4.2\obj\Debug\Thw_4.2.csprojResolveAssemblyReference.cache
+C:\Users\User\source\repos\Thw_4.2\Thw_4.2\obj\Debug\Thw_4.2.exe
+C:\Users\User\source\repos\Thw_4.2\Thw_4.2\obj\Debug\Thw_4.2.pdb
