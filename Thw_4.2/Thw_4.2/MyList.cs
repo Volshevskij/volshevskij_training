@@ -42,6 +42,7 @@ namespace Thw_4._2
 
         public void Remove(int i)
         {
+            Count--;
             Node<T> tmp = FirstNode;
 
             while (true)
@@ -58,6 +59,7 @@ namespace Thw_4._2
 
         public void RemoveByValue(T i)
         {
+            Count--;
             Node<T> tmp = FirstNode;
 
             while (true)

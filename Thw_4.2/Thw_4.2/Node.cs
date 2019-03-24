@@ -17,6 +17,11 @@ namespace Thw_4._2
 
         public Node(T value)
         {
+            if(value == null)
+            {
+                throw new ArgumentNullException();
+            }
+
             Value = value;
             NextNode = null;
         }
