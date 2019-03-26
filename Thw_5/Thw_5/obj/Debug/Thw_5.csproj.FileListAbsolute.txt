@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\Thw_5\Thw_5\bin\Debug\Thw_5.exe.config
+C:\Users\User\source\repos\Thw_5\Thw_5\bin\Debug\Thw_5.exe
+C:\Users\User\source\repos\Thw_5\Thw_5\bin\Debug\Thw_5.pdb
+C:\Users\User\source\repos\Thw_5\Thw_5\obj\Debug\Thw_5.csprojResolveAssemblyReference.cache
+C:\Users\User\source\repos\Thw_5\Thw_5\obj\Debug\Thw_5.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Thw_5\Thw_5\obj\Debug\Thw_5.exe
+C:\Users\User\source\repos\Thw_5\Thw_5\obj\Debug\Thw_5.pdb
